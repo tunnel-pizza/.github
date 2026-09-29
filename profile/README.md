@@ -8,9 +8,8 @@ command, no account.
 npx tunneld
 ```
 
-Open your shell in any browser. Press <kbd>Ctrl</kbd>+<kbd>K</kbd> then
-<kbd>q</kbd> to put it on your phone. Send the address like a password: anyone
-with it can type into your shell.
+Open your shell in any browser. Share the URL and continue on the go or
+collaborate.
 
 ### Interactive shells
 
