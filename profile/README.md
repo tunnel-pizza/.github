@@ -1,7 +1,8 @@
 # tunnel.pizza 🍕
 
-**A public URL for what's running on your machine.** A port, a shell, a coding
-agent, a container: one command, no account, no daemon.
+**Your machine, by the slice.** A public URL for what's running on it: a port,
+a shell, a coding agent, a container, or the whole dev box. One command, no
+account, no daemon.
 
 ```sh
 npx tunneld :3000
@@ -64,6 +65,24 @@ npx tunneld :3000 "next dev" "claude"
 Starts `next dev`, forwards port `3000` to a public hostname, and opens a
 `claude` session beside it: an app, its dev server and an agent, all reachable
 from anywhere.
+
+### The whole pie
+
+The cloud dev box you already own. Most tunnels stop at a port, and terminal
+sharers stop at the terminal; tunneld does both, on one URL.
+
+| | tunneld | [ngrok](https://ngrok.com/docs/share-localhost/quickstart) | [Cloudflare Quick Tunnels](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/) | [Tailscale Funnel](https://tailscale.com/kb/1223/funnel) | [VS Code tunnels](https://code.visualstudio.com/docs/remote/tunnels) | [sshx](https://sshx.io/) |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: |
+| No account to sign up for | ✅ | – | ✅ | – | – | ✅ |
+| A local port on a public URL | ✅ | ✅ | ✅ | ✅ | ✅ | – |
+| A shell or agent in a browser tab, for anyone with the link | ✅ | – | – | – | – | ✅ |
+| Everyone with the link types into the same session | ✅ | – | – | – | – | ✅ |
+| An app and a terminal on one URL, with no config | ✅ | – | – | – | – | – |
+
+<sub>From each tool's own documentation, September 2026. A tool that needs
+another account or hand-built config to do a thing counts as not doing it.
+Anyone with a tunnel's address reaches what's behind it, so send it like a
+password.</sub>
 
 ---
 
