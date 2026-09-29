@@ -1,6 +1,6 @@
 # tunnel.pizza 🍕
 
-**Your machine, by the slice.** Put what's running on it on a public URL: a
+**Slice and share your machine.** Put what's running on it on a public URL: a
 port, a shell, a coding agent, a container, or the whole workspace. One
 command, no account.
 
