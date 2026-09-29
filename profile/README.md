@@ -79,10 +79,22 @@ no account.
 them. Needing another account or hand-built config counts as a no. Send your
 tunnel's address like a password: anyone with it reaches what's behind it.</sub>
 
+### Use it from Claude Code
+
+```
+/plugin marketplace add tunnel-pizza/tunneld
+/plugin install tunneld@tunnel-pizza
+```
+
+Ask Claude to put your app on your phone, or to send it to someone. Type
+`/tunneld:session` to pick your conversation back up on your phone: scan the QR
+code it shows.
+
 ---
 
 - [tunnel.pizza](https://tunnel.pizza) — the site. Sign in with GitHub to
   manage your tunnels; [status](https://tunnel.pizza/status) is public.
-- [tunneld](https://github.com/tunnel-pizza/tunneld) — the CLI, in Go.
+- [tunneld](https://github.com/tunnel-pizza/tunneld) — the CLI, in Go, and its
+  Claude Code plugin.
 
 Made with ❤️ by [Scaffoldly](https://github.com/scaffoldly).
