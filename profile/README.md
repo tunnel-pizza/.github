@@ -2,7 +2,7 @@
 
 **Your machine, by the slice.** A public URL for what's running on it: a port,
 a shell, a coding agent, a container, or the whole dev box. One command, no
-account, no daemon.
+account.
 
 ```sh
 npx tunneld :3000
