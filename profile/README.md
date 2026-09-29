@@ -5,19 +5,21 @@ a shell, a coding agent, a container, or the whole dev box. One command, no
 account.
 
 ```sh
-npx tunneld :3000
+npx tunneld
 ```
 
-A port is the least of it.
+Your shell, in any browser. <kbd>Ctrl</kbd>+<kbd>K</kbd> then <kbd>q</kbd> puts
+it on your phone. Anyone with the address can type into it, so send it like a
+password. A port is the least of it.
 
 ### Interactive shells
 
 ```sh
-npx tunneld zsh
+npx tunneld
 ```
 
-Executes `zsh` on your local machine and makes it accessible in a browser
-anywhere in the world.
+Shares your `$SHELL` as a terminal in a browser tab, reachable from anywhere.
+Nothing else to start, so it is the one to try first.
 
 ### Local ports
 
@@ -25,8 +27,8 @@ anywhere in the world.
 npx tunneld :3000
 ```
 
-Forwards port `3000` on your local machine to a public hostname, so whatever is
-listening there is reachable from anywhere.
+Forwards port `3000` on your local machine to a public hostname. Start your app
+first: the address serves whatever is listening there.
 
 ### Coding agents
 
@@ -45,7 +47,7 @@ npx tunneld :3000 :4000
 ```
 
 Forwards ports `3000` and `4000` at once and opens them side by side in one
-browser window, two apps on one hostname.
+browser window, two apps on one hostname. Start both first.
 
 ### Code editors
 
@@ -59,12 +61,12 @@ included.
 ### Agentic workspaces
 
 ```sh
-npx tunneld :3000 "next dev" "claude"
+npx tunneld :3000 'npm run dev' claude
 ```
 
-Starts `next dev`, forwards port `3000` to a public hostname, and opens a
-`claude` session beside it: an app, its dev server and an agent, all reachable
-from anywhere.
+Starts `npm run dev`, puts the app it serves on the address, and opens a
+`claude` session beside it: your app, its dev server and your agent, all on one
+URL. Use the port your dev server prints.
 
 ### The whole pie
 
