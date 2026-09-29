@@ -1,14 +1,14 @@
 # tunnel.pizza 🍕
 
 **Slice and share your machine.** Put what's running on it on a public URL: a
-port, a shell, a coding agent, a container, or the whole workspace. One
+port, a shell, a coding agent, a container, or your whole workspace. One
 command, no account.
 
 ```sh
 npx tunneld
 ```
 
-Open your shell in any browser. Share the URL and continue on the go or
+Open your shell in any browser. Share your URL and continue on the go or
 collaborate.
 
 ### Interactive shells
@@ -34,8 +34,8 @@ Start your app, then put port `3000` on a public URL.
 npx tunneld 'claude --resume'
 ```
 
-Pick a `claude` session back up from your phone or another computer. Swap in any
-terminal agent: Codex, OpenCode, Gemini CLI.
+Pick your `claude` session back up from your phone or another computer. Swap in
+any terminal agent: Codex, OpenCode, Gemini CLI.
 
 ### Multiple ports
 
@@ -43,7 +43,7 @@ terminal agent: Codex, OpenCode, Gemini CLI.
 npx tunneld :3000 :4000
 ```
 
-Start both apps, then open them side by side on one hostname.
+Start both your apps, then open them side by side on one hostname.
 
 ### Code editors
 
@@ -59,12 +59,12 @@ Open `nvim` in a browser tab, with your config and plugins.
 npx tunneld :3000 'npm run dev' claude
 ```
 
-Run `npm run dev`, the app it serves and `claude` side by side on one URL. Use
-the port your dev server prints.
+Run `npm run dev`, your app and `claude` side by side on one URL. Use the port
+your dev server prints.
 
 ### The whole pie
 
-Your whole workspace on one URL: your app, its dev server and your agent, with
+Your whole workspace on one URL: your app, your dev server and your agent, with
 no account.
 
 | | tunneld | [ngrok](https://ngrok.com/docs/share-localhost/quickstart) | [Cloudflare Quick Tunnels](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/) | [Tailscale Funnel](https://tailscale.com/kb/1223/funnel) | [VS Code tunnels](https://code.visualstudio.com/docs/remote/tunnels) | [sshx](https://sshx.io/) |
@@ -76,7 +76,7 @@ no account.
 | An app and a terminal on one URL, with no config | ✅ | – | – | – | – | – |
 
 <sub>Checked against each tool's own docs, September 2026: click a name to read
-them. Needing another account or hand-built config counts as a no. Send a
+them. Needing another account or hand-built config counts as a no. Send your
 tunnel's address like a password: anyone with it reaches what's behind it.</sub>
 
 ---
