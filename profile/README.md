@@ -65,8 +65,7 @@ the port your dev server prints.
 ### The whole pie
 
 Your whole workspace on one URL: your app, its dev server and your agent, with
-no account. Most tunnels stop at a port, and terminal sharers stop at the
-terminal.
+no account.
 
 | | tunneld | [ngrok](https://ngrok.com/docs/share-localhost/quickstart) | [Cloudflare Quick Tunnels](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/) | [Tailscale Funnel](https://tailscale.com/kb/1223/funnel) | [VS Code tunnels](https://code.visualstudio.com/docs/remote/tunnels) | [sshx](https://sshx.io/) |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: |
