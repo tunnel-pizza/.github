@@ -1,22 +1,25 @@
 # tunnel.pizza 🍕
 
-**A public URL for what's running on your machine.** A port, a shell, a coding
-agent, a container: one command, no account, no daemon.
+**Your machine, by the slice.** Put what's running on it on a public URL: a
+port, a shell, a coding agent, a container, or the whole dev box. One command,
+no account.
 
 ```sh
-npx tunneld :3000
+npx tunneld
 ```
 
-A port is the least of it.
+Open your shell in any browser. Press <kbd>Ctrl</kbd>+<kbd>K</kbd> then
+<kbd>q</kbd> to put it on your phone. Send the address like a password: anyone
+with it can type into your shell.
 
 ### Interactive shells
 
 ```sh
-npx tunneld zsh
+npx tunneld
 ```
 
-Executes `zsh` on your local machine and makes it accessible in a browser
-anywhere in the world.
+Share your `$SHELL` in a browser tab. Nothing else to start, so try this one
+first.
 
 ### Local ports
 
@@ -24,8 +27,7 @@ anywhere in the world.
 npx tunneld :3000
 ```
 
-Forwards port `3000` on your local machine to a public hostname, so whatever is
-listening there is reachable from anywhere.
+Start your app, then put port `3000` on a public URL.
 
 ### Coding agents
 
@@ -33,9 +35,8 @@ listening there is reachable from anywhere.
 npx tunneld 'claude --resume'
 ```
 
-Runs `claude --resume` on your local machine and puts the session in a browser,
-so you can keep working with it from your phone or another computer. Any agent
-that runs in a terminal works the same: Codex, OpenCode, Gemini CLI.
+Pick a `claude` session back up from your phone or another computer. Swap in any
+terminal agent: Codex, OpenCode, Gemini CLI.
 
 ### Multiple ports
 
@@ -43,8 +44,7 @@ that runs in a terminal works the same: Codex, OpenCode, Gemini CLI.
 npx tunneld :3000 :4000
 ```
 
-Forwards ports `3000` and `4000` at once and opens them side by side in one
-browser window, two apps on one hostname.
+Start both apps, then open them side by side on one hostname.
 
 ### Code editors
 
@@ -52,18 +52,34 @@ browser window, two apps on one hostname.
 npx tunneld nvim
 ```
 
-Runs `nvim` on your local machine in a browser tab, your config and plugins
-included.
+Open `nvim` in a browser tab, with your config and plugins.
 
 ### Agentic workspaces
 
 ```sh
-npx tunneld :3000 "next dev" "claude"
+npx tunneld :3000 'npm run dev' claude
 ```
 
-Starts `next dev`, forwards port `3000` to a public hostname, and opens a
-`claude` session beside it: an app, its dev server and an agent, all reachable
-from anywhere.
+Run `npm run dev`, the app it serves and `claude` side by side on one URL. Use
+the port your dev server prints.
+
+### The whole pie
+
+Use the cloud dev box you already own: put your app, its dev server and your
+agent on one URL, with no account. Most tunnels stop at a port, and terminal
+sharers stop at the terminal.
+
+| | tunneld | [ngrok](https://ngrok.com/docs/share-localhost/quickstart) | [Cloudflare Quick Tunnels](https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/do-more-with-tunnels/trycloudflare/) | [Tailscale Funnel](https://tailscale.com/kb/1223/funnel) | [VS Code tunnels](https://code.visualstudio.com/docs/remote/tunnels) | [sshx](https://sshx.io/) |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: |
+| No account to sign up for | ✅ | – | ✅ | – | – | ✅ |
+| A local port on a public URL | ✅ | ✅ | ✅ | ✅ | ✅ | – |
+| A shell or agent in a browser tab, for anyone with the link | ✅ | – | – | – | – | ✅ |
+| Everyone with the link types into the same session | ✅ | – | – | – | – | ✅ |
+| An app and a terminal on one URL, with no config | ✅ | – | – | – | – | – |
+
+<sub>Checked against each tool's own docs, September 2026: click a name to read
+them. Needing another account or hand-built config counts as a no. Send a
+tunnel's address like a password: anyone with it reaches what's behind it.</sub>
 
 ---
 
